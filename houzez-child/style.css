@@ -1,0 +1,228 @@
+/*
+Theme Name: Houzez Child
+Theme URI: http://www.favethemes.com/
+Author: Favethemes
+Author URI: http://www.favethemes.com/
+Description: Houzez is a premium WordPress theme for real estate agents where modern aesthetics are combined with tasteful simplicity, and where the ease of use is achieved without compromise in your ability to customise the design. Whether you are a real estate agent looking to build a website for your company or a web developer seeking a perfect WordPress theme for your next project, you are certain to appreciate the numerous features and benefits that our theme provides.
+Version: 1.0
+Tags: white, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, post-formats, theme-options, translation-ready
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: houzez
+Template: houzez
+*/
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.banner-caption {
+    width: 80%;
+}
+@font-face {
+  font-family: 'MinionPro-Regular';
+  src: url("../fonts/MinionPro-Regular.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'MinionPro-Bold';
+  src: url("../fonts/MinionPro-Bold.otf") format('opentype');
+  font-style: bold; 
+}
+h1,h2,h3,h4,h5 {
+	font-family: 'MinionPro-Regular';
+	color: #0D3300;
+	margin: 0;
+}
+h1 {
+	font-size: 4rem;
+    font-family: 'MinionPro-Bold';
+    line-height: 4rem;
+    font-weight: 700;
+}
+h2 {
+	font-size: 3rem;
+	font-family: 'MinionPro-Regular';
+	font-weight: 400;
+}
+h5 {
+    font-family: Arial;
+    text-transform: none;
+}
+p {
+	color: black;
+	font-family: Arial;
+}
+.white {
+	color: white;
+}
+.center {
+	text-align: center;
+}
+.shadow {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+.container-fluid {
+	width: 100%;
+}
+/*NAVIGATION*/
+ul.submenu {
+	top: 0;
+}
+@media (min-width: 992px){
+	ul.sub-menu {
+    top: 50px !important;
+}
+}
+.main-pg-bg {
+  background: url(/wp-content/uploads/2016/11/tan-bg.jpg) center center/cover;
+ }
+
+.featured-properties {
+  background: url(/wp-content/uploads/2016/11/farm-land.jpg) center center/cover;
+}
+#section-body {
+	background-color: #D8C5A4;
+}
+/*HEADER*/
+#header-section {
+	width: 100%;
+	padding-top: 10px;
+}
+#header-top {
+	padding-bottom: 10px;
+}
+.user {
+	padding-bottom: 10px;
+}
+.user a {
+	color: white;
+}
+.header-mobile .header-logo img {
+    max-height: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.header-section-4 {
+	background-color: #0D3300;
+}
+.header-section-4.header-transparent {
+	background-color: rgba(13,51,0,0.5);
+	position: absolute;
+}
+.header-section-4 .navi > ul > li > a {
+	line-height: 50px;
+}
+.header-section-4 .navi > ul > li > a:hover {
+	background-color: rgba(31,51,0,.9);
+}
+.header-section-4 .account-action li {
+	line-height: 35px;
+	margin-bottom: 10px;
+}
+.header-phone-number {
+	color: white; 
+	font-size: 24px;
+}
+.navi > ul ul a {
+	padding: 10px;
+}
+.navi > ul ul ul.sub-menu {
+  position: absolute;
+  top: 20px;
+  right: -250px;
+  bottom: inherit;
+  left: inherit;
+  z-index: -1;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: hidden;
+}
+/*BODY STYLES*/
+.section {
+	padding-top: 30px;
+}
+.space {
+	padding-top: 30px;
+}
+.shadow {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+.green-bg {
+	background-color: #0D3300;
+	padding: 20px 10px 10px 10px;
+}
+.green-bg p {
+	font-size: 14px;
+	margin-top: 8px;
+}
+.white-bg {
+	background-color: white;
+}
+.gold-border {
+	border: 5px solid #FFCB08;
+	border-radius: 10px;
+}
+.gold-border-full-row {
+	border-top: 5px solid #FFCB08;
+	border-bottom: 5px solid #FFCB08;
+}
+.quick-links h4 {
+	font-family: Arial;
+	font-weight: 200;
+	font-size: 20px;
+	line-height: 28px;
+	color: black;
+	text-transform: none;
+	margin-bottom: 0;
+}
+.quick-links a {
+	color: black;
+}
+ .btn-orange {
+ 	background-color: grey;
+ }
+ .btn-orange:hover{
+ 	color: #0D3300;
+ 	background-color: #FFCB08;
+ }
+.banner-module .caption-mobile .property-title a {
+ 	font-family: 'MinionPro-Regular'
+ 	font-size: 3rem;
+ 	color: white;
+ 	text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+ } 
+/*Play button on property listing page*/
+.actions li > span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 25px;
+    background-color: red;
+    opacity: 1.6;
+ }
+/*FOOTER*/
+ .top-footer {
+ 	background-color: #0D3300;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ }
+ .top-footer p {
+ 	padding-top: 20px;
+ 	color: white;
+ 	text-align: center;
+ }
+ .bottom-footer {
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ 	background-color: #0D3300;
+ 	border-top: 5px solid #FFCB08;
+ }
+ .bottom-footer p, i {
+ 	color: white;
+ }
