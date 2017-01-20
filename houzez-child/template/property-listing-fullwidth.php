@@ -33,7 +33,6 @@ $current_page_template = get_post_meta( $post->ID, '_wp_page_template', true );
 
 <?php get_template_part('template-parts/properties-head'); ?>
 
-
 <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 list-grid-area">
         <div id="content-area">
@@ -135,13 +134,14 @@ $current_page_template = get_post_meta( $post->ID, '_wp_page_template', true );
             <!--start Pagination-->
             <?php houzez_pagination( $wp_query->max_num_pages, $range = 2 ); ?>
             <!--start Pagination-->
-
         </div>
     </div><!-- end container-content -->
 
 </div>
+
+<!-- moved the page content to the bottom of the page -->
 <div class="row">
-    <div class="col-md-12  col-lg-8 col-lg-offset-2">
+    <div class="col-md-12 col-lg-8 col-lg-offset-2">
     <?php
         // Start the loop.
         while ( have_posts() ) : the_post();
