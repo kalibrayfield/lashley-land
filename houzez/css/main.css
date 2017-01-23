@@ -83,42 +83,6 @@ strong, b {
     line-height: 24px !important;
   }
 }
-@font-face {
-  font-family: 'MinionPro-Regular';
-  src: url("../fonts/MinionPro-Regular.otf") format('opentype');
-  font-weight: normal;
-  font-style: normal; 
-}
-@font-face {
-  font-family: 'MinionPro-Bold';
-  src: url("../fonts/MinionPro-Bold.otf") format('opentype');
-  font-style: bold; 
-}
-h1,h2,h3,h4,h5 {
-  font-family: 'MinionPro-Regular';
-  color: #0D3300;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-h1, h4 {
-  font-size: 4rem;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 3rem;
-  font-weight: 500;
-}
-
-h3 {
-  font-size: 2.5rem;
-}
-
-h4 {
-  font-size: 2rem;
-}
-
 .form-control, .post-password-form input[type='password'], input[type="text"].wpcf7-form-control,
 input[type="email"].wpcf7-form-control,
 input[type="password"].wpcf7-form-control,
@@ -20979,4 +20943,42 @@ h4.ihf-price {
   height: 100%;
   position: absolute;
   z-index: 1;
+}
+
+/*Styles 1/20/16
+------------------------------------*/
+@font-face {
+  font-family: 'MinionPro-Regular';
+  src: url("../fonts/MinionPro-Regular.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'MinionPro-Bold';
+  src: url("../fonts/MinionPro-Bold.otf") format('opentype');
+  font-style: bold; 
+}
+h1,h2,h3,h4,h5 {
+  font-family: 'MinionPro-Regular';
+  color: #0D3300;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h1, h4 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
 }
