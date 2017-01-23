@@ -20958,7 +20958,7 @@ h4.ihf-price {
   src: url("../fonts/MinionPro-Bold.otf") format('opentype');
   font-style: bold; 
 }
-h1,h2,h3,h4,h5 {
+h1,h2,h3,h4,h5, .page-title , .title-head {
   font-family: 'MinionPro-Regular';
   color: #0D3300;
   text-align: center;
