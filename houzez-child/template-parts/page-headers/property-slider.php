@@ -43,11 +43,11 @@ global $post, $adv_search_which_header_show, $adv_search_over_header_pages, $adv
 
                         ?>
 
-                            <div class="item fave-screen-fix fave-mobile-screen-fix" style="background-image: url(<?php echo $imag_url[0];?>)">
+                            <div class="item " style="background-image: url(<?php echo $imag_url[0];?>)">
                                 <a href="<?php the_permalink(); ?>" class="banner-link"></a>
-                                <div class="slider-caption caption-desktop hidden-xs">
+                                <div class="slider-caption caption-desktop">
 
-                                    <h2 class="property-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                                    <a href="<?php the_permalink(); ?>"><h2 class="property-slider-title"><?php the_title(); ?></h2></a>
 
                                     <!-- <?php if( $prop_featured != 0 ) { ?>
                                     <div class="label-featured label label-success"><?php esc_html_e( 'Featured', 'houzez' ); ?></div>
@@ -79,32 +79,6 @@ global $post, $adv_search_which_header_show, $adv_search_over_header_pages, $adv
                                             <p><i class="fa fa-calendar"></i><?php printf( __( '%s ago', 'houzez' ), human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) ); ?></p>
                                         </div>
                                         </div>
-                                    </div> -->
-                                </div>
-                                <div class="slider-caption caption-mobile visible-xs">
-                                    <h2 class="property-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-
-                                    <!-- <?php if( $prop_featured != 0 ) { ?>
-                                        <div class="feature-label"><?php esc_html_e( 'Featured', 'houzez' ); ?></div>
-                                    <?php } ?>
-                                    <div class="item-body table-list">
-                                        <div class="body-left table-cell">
-
-                                            <div class="info-row">
-                                                <?php get_template_part('template-parts/listing', 'rating' ); ?>
-
-                                                <p class="property-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
-                                                <?php
-                                                if( !empty( $prop_address )) {
-                                                    echo '<address class="property-address">'.esc_attr( $prop_address ).'</address>';
-                                                }
-                                                ?>
-                                            </div>
-                                            <div class="info-row price">
-                                                <?php echo houzez_listing_price_v1(); ?>
-                                            </div>
-                                        </div>
-                                        <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-detail table-cell"><i class="fa fa-angle-right"></i></a>
                                     </div> -->
                                 </div>
                                 <?php

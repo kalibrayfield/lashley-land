@@ -5,7 +5,7 @@ Author: Favethemes
 Author URI: http://www.favethemes.com/
 Description: Houzez is a premium WordPress theme for real estate agents where modern aesthetics are combined with tasteful simplicity, and where the ease of use is achieved without compromise in your ability to customise the design. Whether you are a real estate agent looking to build a website for your company or a web developer seeking a perfect WordPress theme for your next project, you are certain to appreciate the numerous features and benefits that our theme provides.
 Version: 1.0
-Tags: white, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, post-formats, theme-options, translation-ready
+Tags: white, right-sidebar, left-sidebar, custom-colors, custom-menu, featu#EC3E3B-images, post-formats, theme-options, translation-ready
 License: GNU General Public License version 3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: houzez
@@ -34,13 +34,14 @@ html, body {
 h1,h2,h3,h4,h5 {
 	font-family: 'MinionPro-Regular';
 	color: #0D3300;
-	margin: 0;
+	margin-bottom: 0;
 }
 h1 {
 	font-size: 4rem;
     font-family: 'MinionPro-Bold';
-    line-height: 4rem;
+    line-height: 4.25rem;
     font-weight: 700;
+    margin-bottom: 0;
 }
 h2 {
 	font-size: 3rem;
@@ -68,20 +69,12 @@ p {
 .container-fluid {
 	width: 100%;
 }
-/*NAVIGATION*/
-ul.submenu {
-	top: 0;
-}
-@media (min-width: 992px){
-	ul.sub-menu {
-    top: 50px !important;
-}
-}
+
 .main-pg-bg {
   background: url(/wp-content/uploads/2016/11/tan-bg.jpg) center center/cover;
  }
 
-.featured-properties {
+.featu#EC3E3B-properties {
   background: url(/wp-content/uploads/2016/11/farm-land.jpg) center center/cover;
 }
 #section-body {
@@ -113,8 +106,23 @@ ul.submenu {
 	background-color: rgba(13,51,0,0.5);
 	position: absolute;
 }
+.header-section-4 .account-action li {
+	color: #EC3E3B;
+}
+/*NAVIGATION
+----------------------------*/
+ul.submenu {
+	top: 0;
+}
+@media (min-width: 992px){
+	ul.sub-menu {
+    top: 50px !important;
+}
+}
 .header-section-4 .navi > ul > li > a {
 	line-height: 50px;
+	font-family: Arial;
+	font-weight: 600;
 }
 .header-section-4 .navi > ul > li > a:hover {
 	background-color: rgba(31,51,0,.9);
@@ -126,9 +134,14 @@ ul.submenu {
 .header-phone-number {
 	color: white; 
 	font-size: 24px;
+	font-family: Arial;
+	font-weight: 600;
 }
 .navi > ul ul a {
 	padding: 10px;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: 600;
 }
 .navi > ul ul ul.sub-menu {
   position: absolute;
@@ -141,7 +154,25 @@ ul.submenu {
   filter: alpha(opacity=0);
   visibility: hidden;
 }
-/*BODY STYLES*/
+/*PROPERTY SLIDER
+-----------------------------*/
+.banner-slider .item {
+	height: 600px;
+}
+.banner-module .caption-desktop {
+	width: 1000px;
+	left: 20%;
+}
+.property-slider-title {
+	font-family: Arial;
+	font-size: 3.5rem;
+	font-weight: 600;
+	color: white;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+}
+
+/*BODY STYLES
+------------------------------*/
 .section {
 	padding-top: 30px;
 }
@@ -203,7 +234,7 @@ ul.submenu {
     height: 40px;
     line-height: 40px;
     border-radius: 25px;
-    background-color: red;
+    background-color: #EC3E3B;
     opacity: 1.6;
  }
 /*FOOTER*/
@@ -232,5 +263,12 @@ ul.submenu {
  .media-tabs-list li > a {
  	width: 60px;
  	height: 60px;
- 	background-color: red;
+ 	background-color: #EC3E3B;
+ }
+i.fa.fa-map{
+	font-size: 24px;
+	margin-top: 15px;
+ }
+ .label-wrap .label {
+ 	background-color: #EC3E3B;
  }

@@ -10,11 +10,7 @@ global $post, $property_streetView, $property_map;
 ?>
 <div class="media-tabs">
     <ul class="media-tabs-list">
-        <li class="popup-trigger" data-placement="bottom" data-toggle="tooltip" data-original-title="<?php esc_html_e( 'View Photos', 'houzez' ); ?>">
-            <a href="#gallery" data-toggle="tab">
-                <i class="fa fa-camera"></i>
-            </a>
-        </li>
+        
         
         <?php if( $property_map != 0 ) { ?>
         <li data-placement="bottom" data-toggle="tooltip" data-original-title="<?php esc_html_e('Map View', 'houzez');?>">

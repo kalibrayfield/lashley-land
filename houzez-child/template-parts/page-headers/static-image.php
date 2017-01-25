@@ -63,7 +63,7 @@ if( !empty( $img_url[0] ) ) {
 
         <?php if( $page_head_search != 'yes' ) { ?>
             <h1><?php echo esc_attr($splash_welcome_text); ?></h1>
-            <h2><?php echo esc_attr($page_head_subtitle); ?></h2>
+            <p style="color: white; font-size: 16px;"><?php echo esc_attr($page_head_subtitle); ?></p>
         <?php } ?>
 
         <?php
